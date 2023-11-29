@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+*::selection{
+    background: crimson;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #fff;
+    
+}
+html::-webkit-scrollbar-thumb{
+    background: crimson;
+    border-radius: 5px;
+}
+
+/* navbar */
+.navbar .navbar-brand .header-font{
+    color: #fff;
+}
+.navbar .collapse .navbar-nav {
+    margin: 0rem 2rem;
+}
+.navbar .collapse .navbar-nav .nav-item{
+    color: #fff;
+    
+}
+.navbar .collapse .navbar-nav .nav-item:hover{
+    color: crimson;
+}
+
+/* home page */
+#home{
+    width: 100%;
+}
+#home .container .row{
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+#home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#home .container .text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    word-spacing: 7px;
+    margin: .1rem 0rem;
+}
+#home .container .text p{
+    text-align: justify;
+    word-spacing: 3px;
+    padding: 2rem 0rem;
+}
+#home .container  .text .btn{
+    width: 10rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+}
+#home .container  .text .btn:hover{
+    background-color: #fff;
+    color: crimson;
+    border: 2px solid crimson;
+    letter-spacing: 0cm;
+}
+#home .container  .img{
+    margin: 4rem 0rem;
+    display: block;
+}
+#home .container  .img img{
+    height: 30rem;
+    width: 35rem;
+    padding: 2rem 0rem;
+    display: block;
+}
+#home .container  .img img:hover{
+    transform: scale(1.1);
+    transition: .3s linear;
+    cursor: pointer;
+    display: block;
+}
+
+
+/* about */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#home .container .row .col{
+    width: 20rem;
+}
+
+.container-gallery {
+    margin-top: 5rem;
+    position: relative;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.container-gallery h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container-gallery .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container-gallery .image-container .image {
+    height: 250px;
+    width: 350px;
+    /* border: 10px solid #000; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container-gallery .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container-gallery .image-container .image:hover img {
+    transform: scale(1.1);
+}
+
+.container-gallery .popup-image {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    background: rgba(0, 0, 0, .9  );
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+}
+
+.container-gallery .popup-image span {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container-gallery .popup-image img {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    /* border: 5px solid #fff; */
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+
